@@ -11,7 +11,7 @@ This repository contains the official PyTorch implementation of the following pa
 # Framework
 FED-IPTW introduce a new variable H to capture local bias in each client and decorrelate treatments and covariates at both local and global levels.
 
-<img src="src/framework.PNG" width=80%>
+<img src="src/framework.png" width=80%>
 Framework: (a) Causal graph. $X$, $H$, $T$ and $Y$ denote covariate, hospital treatment strategy, treatment, and outcome. (b) Correlation between covariates and treatments. The ovals with different colors represent the correlation between $X$ and $T$ in various hospitals. The size of ovals represents the number of observed records in the hospitals. IPTW can only globally decorrelate covariates and treatments. The local correlation inside hospitals still exists and will make the local training of federated learning inaccurate. \Ours can decorrelate covariates and treatments in both global and local levels. (c)Pipeline of FED-IPTW. 
 
 
