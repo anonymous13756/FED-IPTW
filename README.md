@@ -38,7 +38,7 @@ Training pipeline.
 
 
 
-# Train FED-IPTW
+# Training and validation of FED-IPTW
 ```
 python3 main.py \
             --exp_name "FedAvg_synthetic" --seed 100 --device cuda \
